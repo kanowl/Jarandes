@@ -1,0 +1,5 @@
+static/uploads/
+*.avi
+*.mp4
+*.mov
+*.mkv
