@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardines de los Andes</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img">        <div class="logo-text">
+            <h2>Jardines de los Andes</h2>
+            <p>Detección y Conteo Inteligente de Flores</p>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="upload-box">
+        <h2>Agrega el video</h2>
+        <p class="subtitle">Adjuntar información y video de una cama para análisis automático</p>
+
+        <div class="upload-area">
+            <div class="upload-circle">⬆️</div>
+            <p>Agregar información</p>
+            <button class="upload-btn" onclick="window.location.href='/formulario'">📹 Iniciar</button>            <small class="formatos">Formatos soportados: MP4, MOV, AVI, WebM</small>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🎯 Detección Precisa</h3>
+            <p>Algoritmos de IA para identificar y contar flores con alta precisión</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📊 Análisis Completo</h3>
+            <p>Clasificación por etapa de maduración y estadísticas detalladas</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📅 Fecha de Corte</h3>
+            <p>Predicción inteligente del momento óptimo para la cosecha</p>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <title>Adjuntar video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='formulario.css') }}">
+</head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img">        <div class="logo-text">
+            <h2>Jardines de los Andes</h2>
+            <p>Detección y Conteo Inteligente de Flores</p>
+        </div>
+    </div>
+</header>
+
+
+<body>
+
+<div class="contenedor">
+
+    <!-- IZQUIERDA: FORMULARIO -->
+    <div class="lado-izquierdo">
+        <h2>Ingresar Datos</h2>
+
+        <form action="/guardar_datos" method="POST">
+
+            <label>Semana:</label>
+            <input type="number" name="semana" required>
+
+            <label>Finca:</label>
+            <input type="text" name="finca" required>
+
+            <label>Invernadero:</label>
+            <input type="number" name="invernadero" required>
+
+            <label>Cama:</label>
+            <input type="number" name="cama" required>
+
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+
+            <label>Hora:</label>
+            <input type="time" name="hora" required>
+
+            <button type="submit">Guardar Datos</button>
+        </form>
+    </div>
+
+    <!-- DERECHA: CARGA DE VIDEO -->
+    <div class="lado-derecho">
+        <h2>Cargar Video</h2>
+
+        <form action="/subir_video" method="POST" enctype="multipart/form-data">
+            <label>Seleccione un video:</label>
+            <input type="file" name="video" accept="video/*" required>
+
+            <button type="submit">Subir Video</button>
+        </form>
+
+        <div class="cuadro-video">
+            <p>Aquí se mostrará el video después de cargarlo.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

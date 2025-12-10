@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    background: #f6fdf7;
+    color: #333;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.header {
+    padding: 20px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e8eee8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    font-size: 34px;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #5d885d;
+}
+
+/* ---------------- CONTENIDO CENTRAL ---------------- */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Caja principal */
+
+.upload-box {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.05);
+}
+
+.upload-box h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Área de carga */
+
+.upload-area {
+    border: 2px dashed #d1e8d1;
+    border-radius: 14px;
+    padding: 45px;
+}
+
+.upload-circle {
+    width: 70px;
+    height: 70px;
+    background: #e9f9ed;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #46b76a;
+}
+
+.upload-btn {
+    background: #2fae53;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.upload-btn:hover {
+    background: #249547;
+}
+
+.formatos {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+}
+
+/* ---------------- FEATURES ---------------- */
+
+.features {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    flex: 1;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .upload-box {
+        padding: 30px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .logo-text h2 {
+        font-size: 18px;
+    }
+
+    .logo-text p {
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .upload-box {
+        padding: 25px 20px;
+    }
+
+    .upload-area {
+        padding: 35px 20px;
+    }
+
+    .upload-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .upload-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 16px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.formulario input {
+    padding: 10px 12px;
+    border: 1px solid #cfe8d1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.formulario label {
+    font-weight: 600;
+    color: #2a5930;
+}
+
+.two-columns {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Hacer ambas cajas igual tamaño visual */
+.upload-box {
+    flex: 1;
+}
+
+/* ----- RESPONSIVE PARA CELULAR ----- */
+@media (max-width: 900px) {
+    .two-columns {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
