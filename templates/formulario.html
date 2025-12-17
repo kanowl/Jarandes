@@ -29,47 +29,47 @@
     <div class="lado-izquierdo">
         <h2>Ingresar Datos</h2>
 
-        <form action="/guardar_datos" method="POST">
+        <form action="/subir_video" method="POST" enctype="multipart/form-data">
 
-            <label>Semana:</label>
-            <input type="number" name="semana" required>
+    <label>Semana:</label>
+    <input type="number" name="semana" required>
 
-            <label>Finca:</label>
-            <input type="text" name="finca" required>
+    <label>Finca:</label>
+    <input type="text" name="finca" required>
 
-            <label>Invernadero:</label>
-            <input type="number" name="invernadero" required>
+    <label>Invernadero:</label>
+    <input type="number" name="invernadero" required>
 
-            <label>Cama:</label>
-            <input type="number" name="cama" required>
+    <label>Cama:</label>
+    <input type="number" name="cama" required>
 
-            <label>Fecha:</label>
-            <input type="date" name="fecha" required>
+    <label>Fecha:</label>
+    <input type="date" name="fecha" required>
 
-            <label>Hora:</label>
-            <input type="time" name="hora" required>
+    <label>Hora:</label>
+    <input type="time" name="hora" required>
 
-            <button type="submit">Guardar Datos</button>
-        </form>
-    </div>
+    <label>Seleccione un video:</label>
+    <input type="file" name="video" accept="video/*" required>
+
+    <button type="submit">Guardar</button>
+</form>    </div>
 
     <!-- DERECHA: CARGA DE VIDEO -->
-    <div class="lado-derecho">
-        <h2>Cargar Video</h2>
+    <!-- <div class="lado-derecho">
+        <h2> Video</h2>
 
-        <form action="/subir_video" method="POST" enctype="multipart/form-data">
-            <label>Seleccione un video:</label>
-            <input type="file" name="video" accept="video/*" required>
 
-            <button type="submit">Subir Video</button>
+
         </form>
 
         <div class="cuadro-video">
             <p>Aquí se mostrará el video después de cargarlo.</p>
-        </div>
+        </div>-->
     </div>
 
 </div>
+</body>
 
 </body>
 </html>

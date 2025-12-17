@@ -131,3 +131,105 @@ button:hover {
         font-size: 14px;
     }
 }
+
+.filtros-linea {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto; /* si la pantalla es pequeña */
+}
+
+.filtros-linea div {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+}
+
+.filtros-linea label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.filtros-linea input {
+    padding: 6px;
+}
+
+.boton-buscar button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.titulo {
+    margin: 20px 0;
+    color: #2e7d32;
+}
+
+/* Contenedor con scroll horizontal */
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+/* Tabla */
+.tabla-historico {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+}
+
+/* Encabezados */
+.tabla-historico thead th {
+    background: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Celdas */
+.tabla-historico td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hover fila */
+.tabla-historico tbody tr:hover {
+    background-color: #f1f8f1;
+}
+
+/* Botón ver */
+.btn-ver {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background: #e53935;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-eliminar:hover {
+    background: #c62828;
+}
+
+h2.titulo {
+    margin-top: 30px;
+}

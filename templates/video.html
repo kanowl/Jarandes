@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <title>Adjuntar video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='formulario.css') }}">
+</head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img">        <div class="logo-text">
+            <h2>Jardines de los Andes</h2>
+            <p>Detección y Conteo Inteligente de Flores</p>
+        </div>
+    </div>
+</header>
+
+
+<body>
+<h2>Video subido correctamente</h2>
+
+<video width="500" controls>
+    <source src="{{ video_url }}" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+</video>
+
+<br>
+<a href="/">Volver a página inicial</a>
+</div>
+</body>
+
+</body>
+</html>
